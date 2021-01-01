@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
-import Swiper from "./Swiper";
+import Swiper from "react-native-deck-swiper";
 const CARDS = [
   { name: "1", image: "https://media.giphy.com/media/GfXFVHUzjlbOg/giphy.gif" },
   { name: "2", image: "https://media.giphy.com/media/irTuv1L1T34TC/giphy.gif" },

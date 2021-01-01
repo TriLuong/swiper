@@ -1,91 +1,77 @@
 import { StyleSheet } from "react-native";
 
-const styles = StyleSheet.create({
-  card: {
-    flex: 1,
-    position: "absolute",
-  },
-  container: {
-    alignItems: "stretch",
-    position: "absolute",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-  },
-  childrenViewStyle: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-  },
-  overlayLabelWrapper: {
-    position: "absolute",
-    backgroundColor: "transparent",
-    zIndex: 2,
-    flex: 1,
-    width: "100%",
-    height: "100%",
-  },
-  hideOverlayLabel: {
-    opacity: 0,
-  },
-  overlayLabel: {
-    fontSize: 45,
-    fontWeight: "bold",
-    borderRadius: 10,
-    padding: 10,
-    overflow: "hidden",
-  },
-  bottomOverlayLabelWrapper: {
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  topOverlayLabelWrapper: {
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  rightOverlayLabelWrapper: {
-    flexDirection: "column",
-    alignItems: "flex-start",
-    justifyContent: "flex-start",
-    marginTop: 30,
-    marginLeft: 30,
-  },
-  leftOverlayLabelWrapper: {
-    flexDirection: "column",
-    alignItems: "flex-end",
-    justifyContent: "flex-start",
-    marginTop: 30,
-    marginLeft: -30,
-  },
-  card: {
-    alignItems: "center",
-    borderRadius: 5,
-    overflow: "hidden",
-    borderColor: "grey",
-    backgroundColor: "white",
-    borderWidth: 1,
-    elevation: 1,
-  },
-  thumbnail: {
-    flex: 1,
-    width: 300,
-    height: 300,
-  },
-  text: {
-    fontSize: 20,
-    paddingTop: 10,
-    paddingBottom: 10,
-  },
-  noMoreCards: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
+export const styles = () =>
+  StyleSheet.create({
+    containerSwipe: {
+      backgroundColor: "transparent",
+    },
+    card: {
+      backgroundColor: "transparent",
+    },
+    cardItem: {
+      width: "100%",
+      height: 600,
+      borderRadius: 24,
+      overflow: "hidden",
+    },
+
+    cardGradient: {
+      position: "absolute",
+      left: 0,
+      right: 0,
+      top: 0,
+      bottom: 0,
+    },
+    imageWrap: {
+      borderRadius: 24,
+    },
+    title: {
+      paddingHorizontal: 6,
+      paddingTop: 4,
+      paddingBottom: 6,
+    },
+    circleTextWrap: {
+      justifyContent: "center",
+      alignItems: "center",
+      width: 28,
+      height: 28,
+      borderColor: "white",
+      borderWidth: 2,
+      borderRadius: 14,
+
+      textAlign: "center",
+    },
+
+    overlayLeftLabel: {
+      backgroundColor: "transparent",
+      borderColor: "#6ee3b4",
+      borderWidth: 4,
+      fontSize: 32,
+      color: "#6ee3b4",
+      fontWeight: "bold",
+    },
+    overlayLeftLabelWrap: {
+      flexDirection: "column",
+      alignItems: "flex-end",
+      justifyContent: "flex-start",
+      marginTop: 30,
+      marginLeft: -30,
+    },
+    overlayRightLabel: {
+      backgroundColor: "transparent",
+      borderColor: "#ec5288",
+      borderWidth: 4,
+      fontSize: 32,
+      color: "#ec5288",
+      fontWeight: "bold",
+    },
+    overlayRightLabelWrap: {
+      flexDirection: "column",
+      alignItems: "flex-start",
+      justifyContent: "flex-start",
+      marginTop: 30,
+      marginLeft: 30,
+    },
+  });
 
 export default styles;
